@@ -1,0 +1,12 @@
+version: '3'
+services:
+  nginx:
+    ports:
+    - "80:80"
+    build:
+      context: ./nginx
+  idp:
+    image: php:7.4.16-fpm-buster
+    ports:
+      - "8080:8080"
+    command: tail -f /dev/null
