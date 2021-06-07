@@ -12,5 +12,5 @@ services:
     build:
        context: ./idp
     volumes:
-      - ./config:/var/simplesamlphp/config
+      - ./idp/config:/var/simplesamlphp/config
     # command: tail -f /dev/null
