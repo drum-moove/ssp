@@ -6,11 +6,9 @@ services:
     build:
       context: ./nginx
   idp:
-    # image: php:7.4.16-fpm-buster
     ports:
       - "9000:8080"
     build:
        context: ./idp
     volumes:
       - ./idp/config:/var/simplesamlphp/config
-    # command: tail -f /dev/null
