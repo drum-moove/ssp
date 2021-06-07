@@ -6,7 +6,11 @@ services:
     build:
       context: ./nginx
   idp:
-    image: php:7.4.16-fpm-buster
+    # image: php:7.4.16-fpm-buster
     ports:
-      - "8080:8080"
-    command: tail -f /dev/null
+      - "9000:8080"
+    build:
+       context: ./idp
+    volumes:
+      - ./idp/html:/var/www/html
+    # command: tail -f /dev/null
