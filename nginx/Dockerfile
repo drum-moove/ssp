@@ -8,6 +8,8 @@ RUN mkdir -p \
     /var/run/nginx/
 
 COPY nginx.conf /etc/nginx/
+COPY server.crt /etc/nginx/
+COPY server.key /etc/nginx/
 
 RUN chown -R nginx:nginx \
     /etc/nginx/ \
