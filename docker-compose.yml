@@ -12,3 +12,4 @@ services:
        context: ./idp
     volumes:
       - ./idp/config:/var/simplesamlphp/config
+      - ./idp/metadata:/var/simplesamlphp/metadata
