@@ -30,7 +30,7 @@ $config = [
     'admin.checkforupdates' => true,
     'trusted.url.domains' => [],
     'trusted.url.regex' => false,
-    'enable.http_post' => false,
+    'enable.http_post' => true,
     'assertion.allowed_clock_skew' => 180,
 
     /************************
@@ -129,7 +129,7 @@ $config = [
     'session.cookie.lifetime' => 0,
     'session.cookie.path' => '/',
     'session.cookie.domain' => null,
-    'session.cookie.secure' => true,
+    'session.cookie.secure' => false,
     'session.cookie.samesite' => \SimpleSAML\Utils\HTTP::canSetSameSiteNone() ? 'None' : null,
     'session.phpsession.cookiename' => 'SimpleSAML',
     'session.phpsession.savepath' => null,
@@ -168,11 +168,7 @@ $config = [
         ],
     ],
 
-    'language.available' => [
-        'en', 'no', 'nn', 'se', 'da', 'de', 'sv', 'fi', 'es', 'ca', 'fr', 'it', 'nl', 'lb',
-        'cs', 'sl', 'lt', 'hr', 'hu', 'pl', 'pt', 'pt-br', 'tr', 'ja', 'zh', 'zh-tw', 'ru',
-        'et', 'he', 'id', 'sr', 'lv', 'ro', 'eu', 'el', 'af', 'zu', 'xh', 'st',
-    ],
+    'language.available' => [ 'ja' ],
     'language.rtl' => ['ar', 'dv', 'fa', 'ur', 'he'],
     'language.default' => 'en',
     'language.parameter.name' => 'language',
