@@ -6,6 +6,8 @@ services:
     - "443:443"
     build:
       context: ./nginx
+    volumes:
+      - ./idp/resources:/var/lib/nginx/html/resources
   idp:
     ports:
       - "9000:8080"
