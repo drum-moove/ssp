@@ -16,4 +16,5 @@ services:
     volumes:
       - ./idp/config:/var/simplesamlphp/config
       - ./idp/metadata:/var/simplesamlphp/metadata
+      - ./nginx/cert:/var/simplesamlphp/cert
     working_dir: /var/simplesamlphp
