@@ -7,7 +7,7 @@ services:
     build:
       context: ./nginx
     volumes:
-      - ./nginx/hoge.html:/var/simplesaml/www/hoge.html
+      - ./nginx/resources:/var/simplesaml/www/resources
   idp:
     ports:
       - "9000:8080"
