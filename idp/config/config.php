@@ -24,7 +24,7 @@ $config = [
      **********************************/
 
     'secretsalt' => 'hogehuga',
-    'auth.adminpassword' => '123',
+    'auth.adminpassword' => 'pass',
     'admin.protectindexpage' => false,
     'admin.protectmetadata' => false,
     'admin.checkforupdates' => true,
@@ -168,7 +168,7 @@ $config = [
         ],
     ],
 
-    'language.available' => [ 'ja' ],
+    'language.available' => [ 'ja', 'en' ],
     'language.rtl' => ['ar', 'dv', 'fa', 'ur', 'he'],
     'language.default' => 'en',
     'language.parameter.name' => 'language',
