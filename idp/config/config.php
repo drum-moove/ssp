@@ -23,7 +23,7 @@ $config = [
      | SECURITY CONFIGURATION OPTIONS |
      **********************************/
 
-    'secretsalt' => 'defaultsecretsalt',
+    'secretsalt' => 'hogehuga',
     'auth.adminpassword' => '123',
     'admin.protectindexpage' => false,
     'admin.protectmetadata' => false,
