@@ -6,6 +6,8 @@ services:
     - "443:443"
     build:
       context: ./nginx
+    volumes:
+      - ./nginx/hoge.html:/var/simplesaml/www/hoge.html
   idp:
     ports:
       - "9000:8080"
