@@ -18,3 +18,12 @@ services:
       - ./idp/metadata:/var/simplesamlphp/metadata
       - ./nginx/cert:/var/simplesamlphp/cert
     working_dir: /var/simplesamlphp
+  sp:
+    ports:
+      - "9001:8080"
+    build:
+       context: ./sp
+    volumes:
+      - ./sp/config:/var/simplesamlphp/config
+      - ./sp/metadata:/var/simplesamlphp/metadata
+    working_dir: /var/simplesamlphp

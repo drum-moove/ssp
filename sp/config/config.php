@@ -10,7 +10,7 @@ $config = [
      | BASIC CONFIGURATION OPTIONS |
      *******************************/
 
-    'baseurlpath' => 'simplesamlidp/',
+    'baseurlpath' => 'simplesamlsp/',
     'certdir' => 'cert/',
     'loggingdir' => 'log/',
     'datadir' => 'data/',
