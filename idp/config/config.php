@@ -104,16 +104,16 @@ $config = [
      *************/
 
     'enable.saml20-idp' => true,
-    'enable.shib13-idp' => false,
+    'enable.shib13-idp' => true,
     'enable.adfs-idp' => false,
-    'shib13.signresponse' => false,
+    'shib13.signresponse' => true,
 
     /***********
      | MODULES |
      ***********/
 
      'module.enable' => [
-         'exampleauth' => false,
+         'exampleauth' => true,
          'core' => true,
          'saml' => true
      ],

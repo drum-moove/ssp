@@ -113,7 +113,7 @@ $config = [
      ***********/
 
      'module.enable' => [
-         'exampleauth' => false,
+         'exampleauth' => true,
          'core' => true,
          'saml' => true
      ],

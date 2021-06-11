@@ -82,7 +82,6 @@ $config = [
     ],
     */
 
-    /*
     'example-userpass' => [
         'exampleauth:UserPass',
 
@@ -100,7 +99,6 @@ $config = [
             'eduPersonAffiliation' => ['member', 'employee'],
         ],
     ],
-    */
 
     /*
     'crypto-hash' => [
