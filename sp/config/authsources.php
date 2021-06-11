@@ -27,13 +27,16 @@ $config = [
     'default-sp' => [
         'saml:SP',
 
+        'privatekey' => 'sp1.local.pem', # 追記
+        'certificate' => 'sp1.local.crt', # 追記
+
         // The entity ID of this SP.
         // Can be NULL/unset, in which case an entity ID is generated based on the metadata URL.
-        'entityID' => null,
+        'entityID' => 'https://localhost:9001',
 
         // The entity ID of the IdP this SP should contact.
         // Can be NULL/unset, in which case the user will be shown a list of available IdPs.
-        'idp' => null,
+        'idp' => 'https://idp:9000/simplesaml/saml2/idp/metadata.php',
 
         // The URL to the discovery service.
         // Can be NULL/unset, in which case a builtin discovery service will be used.

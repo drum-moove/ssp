@@ -103,7 +103,7 @@ $config = [
      | PROTOCOLS |
      *************/
 
-    'enable.saml20-idp' => true,
+    'enable.saml20-idp' => false,
     'enable.shib13-idp' => false,
     'enable.adfs-idp' => false,
     'shib13.signresponse' => false,

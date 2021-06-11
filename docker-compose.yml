@@ -26,4 +26,5 @@ services:
     volumes:
       - ./sp/config:/var/simplesamlphp/config
       - ./sp/metadata:/var/simplesamlphp/metadata
+      - ./sp/cert:/var/simplesamlphp/cert
     working_dir: /var/simplesamlphp
